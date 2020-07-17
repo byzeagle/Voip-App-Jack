@@ -7,6 +7,11 @@
 #include <sys/socket.h>
 #include <arpa/inet.h>
 
+/*
+*	Author: Ugur Buyukdurak
+*	Copyright 2020
+*/
+
 #include <jack/jack.h>
 
 #define PORT 8080
