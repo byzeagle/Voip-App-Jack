@@ -5,4 +5,6 @@ My code is a bit modified version of the following link : https://github.com/jac
 
 I tried PulseAudio, Java Sound API and ALSA API to do the same task of sound over IP. Although PulseAudio and Java Sound API were much easier to use than both ALSA API and JackAudio, they were inefficient, meaning there were more than 1.5 sec of delay with those. I managed to do capture and playback almost real-time with ALSA API, however, I wasn't able to get it to work between two separate processes on the same host and on different hosts.
 
-Lastly, I came across with Jack while searching for sound programming. 
+Lastly, I came across with Jack while searching for sound programming. It is a low-latency sound server for professional audio work. The fact that it is low-lantency made it a great choice for my program, although Jack API was confusing to understand in the beginning.
+
+My implemetation isn't a perfect one(especially for this). I probably miused Jack API and that there are tons of bugs in the program. However, it does its job well in sending and receiving sound from one host to another without much latency in LAN. I did not get a chance to try it in WAN due to my router not allowing UDP port forwarding.
